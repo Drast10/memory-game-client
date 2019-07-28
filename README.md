@@ -17,11 +17,11 @@ Example turn:
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+Memory Game uses a number of open source projects to work properly:
 
 * [ReactJs] - HTML enhanced for web apps!
 
-And of course Dillinger itself is open source with a [public repository][dill]
+And of course Memory Game itself is open source with a [public repository][dill]
  on GitHub.
 
 ### Installation
@@ -91,5 +91,5 @@ MIT
 
 **Free Software, Hell Yeah!**
 
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [git-repo-url]: <https://github.com/Drast10/memory-game-client.git>
    [ReactJs]: <https://reactjs.org/>
