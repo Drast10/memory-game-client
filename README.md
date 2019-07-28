@@ -21,8 +21,6 @@ Memory Game uses a number of open source projects to work properly:
 
 * [ReactJs] - HTML enhanced for web apps!
 
-And of course Memory Game itself is open source with a [public repository][dill]
- on GitHub.
 
 ### Installation
 
