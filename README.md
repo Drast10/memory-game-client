@@ -26,7 +26,7 @@ And of course Memory Game itself is open source with a [public repository][dill]
 
 ### Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
+Memory Game requires [Node.js](https://nodejs.org/) v4+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
@@ -89,7 +89,7 @@ License
 MIT
 
 
-**Free Software, Hell Yeah!**
+
 
    [git-repo-url]: <https://github.com/Drast10/memory-game-client.git>
    [ReactJs]: <https://reactjs.org/>
