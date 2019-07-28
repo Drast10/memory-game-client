@@ -18,9 +18,12 @@ export class CardList extends React.Component {
   updateSelectedInput = (number) => {
     var joined = this.state.userSelection.concat(number);
     this.setState({ userSelection: joined })
+   
     const { userSelection, randomNumbers } = this.state;
     const selection = userSelection;
+    if(userSelection.length+1===randomNumbers.length){
     selection.push(number)
+    }
     if (selection.length === randomNumbers.length) {
       if (randomNumbers.slice().sort().every(function (value, index) {
         return value === selection[index]
