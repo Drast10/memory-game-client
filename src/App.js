@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route} from 'react-router-dom'
+import { SelectLevel } from './components/select-level/select-level';
+import { GameInstruction } from './components/game-instruction/game-instruction';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Memory Game</h1>
+      <Route exact path ='/' component={GameInstruction} />
+      <Route exact path='/game-level' component = {SelectLevel}/>
     </div>
   );
 }
