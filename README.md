@@ -1,8 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Memory Game
 
-## Available Scripts
+## [`Click here to Play Game`](https://memory-game-client.herokuapp.com/)
 
-In the project directory, you can run:
+
+Memory Gmae, a player is presented with a number of cards. Each card has a number on one side and is blank (empty) from the other side. To start the game, the player is asked to choose the number of cards to play (4, 8 or 12). After that, they will see the cards on the screen with random numbers
+displayed on them and one button “Play”.When they click the play button, cards should be flipped to the blank side. The player is then asked
+to click on the cards in ascending order of the numbers that are on the other side.
+
+Example turn:
+  - Player chooses 4 cards.
+  - Cards are displayed with numbers: 34, 10, 12, 45.
+  - Cards are flipped to the blank side.
+  - Player click on the 10 cards followed by 12, 35, 45
+  - Player wins..
+
+
+### Tech
+
+Dillinger uses a number of open source projects to work properly:
+
+* [ReactJs] - HTML enhanced for web apps!
+
+And of course Dillinger itself is open source with a [public repository][dill]
+ on GitHub.
+
+### Installation
+
+Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ npm install
+$ npm  start
+```
+
+For production environments...
+
+```sh
+$ npm install --production
+$ npm run build
+```
+
+
+### Development
+
 
 ### `npm start`git 
 
@@ -37,32 +79,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+License
+----
 
-### Analyzing the Bundle Size
+MIT
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+**Free Software, Hell Yeah!**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [ReactJs]: <https://reactjs.org/>

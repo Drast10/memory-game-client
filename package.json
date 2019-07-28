@@ -1,6 +1,11 @@
 {
   "name": "memory-game-client",
   "version": "0.1.0",
+  "author": {
+    "name": "Drasti Gadhia",
+    "email": "d10gadhia@gmail.com",
+    "url": "https://github.com/Drast10"
+  },
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
