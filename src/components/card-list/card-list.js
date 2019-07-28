@@ -34,7 +34,7 @@ export class CardList extends React.Component {
 
   //pass the level of game to backend
   componentDidMount() {
-    fetch('http://localhost:4000/number?mode=' + this.props.level)
+    fetch('https://memory-game-server.herokuapp.com/number?mode=' + this.props.level)
       .then(response => response.json())
       .then(numbers => this.setState({ randomNumbers: numbers.randomArray }))
   }
