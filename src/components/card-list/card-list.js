@@ -14,27 +14,32 @@ export class CardList extends React.Component {
     showMessage: false
   }
 
-  //user select card input and logic
+
   updateSelectedInput = (number) => {
     var joined = this.state.userSelection.concat(number);
     this.setState({ userSelection: joined })
-   
+    
     const { userSelection, randomNumbers } = this.state;
     const selection = userSelection;
     if(userSelection.length+1===randomNumbers.length){
     selection.push(number)
     }
-    if (selection.length === randomNumbers.length) {
-      if (randomNumbers.slice().sort().every(function (value, index) {
-        return value === selection[index]
-      })) {
-        this.setState({ ...this.state, isWon: true, showMessage: true })
-      } else {
-        this.setState({ ...this.state, isWon: false, showMessage: true })
-      }
+    if (!(randomNumbers.slice().sort()[selection.length]===number)) {
+    
+    this.setState({ ...this.state, isWon: false, showMessage: true })
     }
-  }
+    
+    
+    if (selection.length === randomNumbers.length) {
+    if (randomNumbers.slice().sort().every(function (value, index) {
+    return value === selection[index]
+    })) {
+    this.setState({ ...this.state, isWon: true, showMessage: true })
+    }
+    }
+    }
 
+  
   //pass the level of game to backend
   componentDidMount() {
     fetch('https://memory-game-server.herokuapp.com/number?mode=' + this.props.level)
