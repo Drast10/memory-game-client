@@ -31,7 +31,7 @@ export  class SelectLevel extends React.Component{
 
   render(){
     return(<main>  
-    {this.showcards()}  
+    {this.showcards()} 
       </main>)
   }
   
